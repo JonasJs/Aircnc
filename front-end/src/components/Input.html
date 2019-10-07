@@ -1,0 +1,26 @@
+<script>
+  import axios from "axios";
+  export let Label;
+
+  axios({
+    method: "post",
+    url: "http://localhost:3333/sessions",
+    data: {
+      email: "joonasjss@gmail.com"
+    }
+  }).then(response => {
+    const { data } = response;
+    console.log(data);
+  });
+</script>
+
+<style lang="scss">
+  .form-group label {
+    display: block;
+  }
+</style>
+
+<div class="form-group">
+  <label>{Label}</label>
+  <input type="text" />
+</div>
