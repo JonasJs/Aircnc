@@ -1,21 +1,30 @@
 <script>
-  import Nav from "../components/Nav.html";
-  export let segment;
+
 </script>
 
 <style>
-  main {
-    position: relative;
-    max-width: 56em;
-    background-color: white;
-    padding: 2em;
-    margin: 0 auto;
+  :global(*){
+    margin: 0;
+    padding: 0;
+    outline: none;
     box-sizing: border-box;
+  }
+  :global(html, body), .App {
+    min-height: 100%;
+    height: 100%;
+  }
+  :global(body){
+    background: url('images/background.jpg') no-repeat;
+    background-size: cover;
+    -webkit-font-smoothing: antialiased !important;
+    color: #fff;
+  }
+  :global(body, input, button){
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 14px;
   }
 </style>
 
-<Nav {segment} />
-
-<main>
+<div class="App">
   <slot />
-</main>
+</div>
