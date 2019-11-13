@@ -4,7 +4,6 @@
 
 <style >
   
-
 </style>
 
 <button on:click={handleClick} >{title}</button>

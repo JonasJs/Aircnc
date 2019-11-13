@@ -1,7 +1,3 @@
-<script>
-
-</script>
-
 <style>
   :global(*){
     margin: 0;

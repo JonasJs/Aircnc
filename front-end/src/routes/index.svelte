@@ -1,21 +1,9 @@
-<!-- <script context="module">
-  export async function preload(page, session) {
-    const { slug } = page.params;
-    console.log(page);
-    console.log(session);
-
-    console.log("jonas");
-  }
-</script> -->
-
-
 <script>
   import Input from "../components/Input.svelte";
   import Button from '../components/Button.svelte';
-
 </script>
 
-<style>
+<style lang="scss">
   .home{
     height: 100%;
     display: flex;
@@ -23,22 +11,22 @@
     justify-content: center;
     align-items: center;
     color: #444;
-  }
-  .home img {
-    margin-bottom: 56px;
-  }
-  .home .content {
-    max-width: 420px;
-    width: 100%;
-    padding: 32px;
-    background: #fff;
-    margin-top: 50px;
-    border-radius: 4px;
-  }
-  .home p {
-    font-size: 19px;
-    line-height: 27px;
-    margin-bottom: 32px;
+    img {
+      margin-bottom: 56px;
+    }
+    .content {
+      max-width: 420px;
+      width: 100%;
+      padding: 32px;
+      background: #fff;
+      margin-top: 50px;
+      border-radius: 4px;
+    }
+    p {
+      font-size: 19px;
+      line-height: 27px;
+      margin-bottom: 32px;
+    }
   }
 </style>
 

@@ -1,7 +1,6 @@
 <script>
   import axios from "axios";
   export let Label, placeholder;
-
   // axios({
   //   method: "post",
   //   url: "http://localhost:3333/sessions",
@@ -16,7 +15,6 @@
 
 <style lang="scss">
   .form-group {
-
   }
   .form-group label {
     display: block;
@@ -25,7 +23,6 @@
     font-weight: bold;
     margin-bottom: 8px;
   }
-
   .form-group input {
     width: 100%;
     height: 40px;
@@ -33,7 +30,6 @@
     margin-bottom: 16px;
     padding: 0 8px;
   }
-
 </style>
 
 <div class="form-group">
