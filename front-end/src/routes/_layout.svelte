@@ -18,7 +18,7 @@
   :global(body, input, button){
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 14px;
-  }
+  } 
 </style>
 
 <div class="App">

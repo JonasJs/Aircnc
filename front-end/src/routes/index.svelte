@@ -8,11 +8,11 @@
 		console.log(`Email: ${email}`);
 	}
 
-
+ 
 </script>
 
 <style lang="scss">
-  .home{
+  .home { 
     height: 100%;
     display: flex;
     flex-direction: column;
