@@ -1,9 +1,9 @@
 <script>
-    export let title, handleClick;
+    export let title;
 </script>
 
 <style >
   
 </style>
 
-<button on:click={handleClick} >{title}</button>
+<button on:click >{title}</button>

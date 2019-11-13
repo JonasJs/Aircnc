@@ -1,6 +1,14 @@
 <script>
   import Input from "../components/Input.svelte";
   import Button from '../components/Button.svelte';
+
+  let email = '';
+
+  function handleClick() {
+		console.log(`Email: ${email}`);
+	}
+
+
 </script>
 
 <style lang="scss">
@@ -23,7 +31,7 @@
       border-radius: 4px;
     }
     p {
-      font-size: 19px;
+      font-size: 19px; 
       line-height: 27px;
       margin-bottom: 32px;
     }
@@ -35,8 +43,8 @@
 
   <div class="content">
     <p>Ofereça <strong>spots</strong> para programadores e encontre <strong>talentos</strong> para sua empresa</p>
-    <Input Label="Email*" placeholder="Digite seu email"/>
-    <Button title="Entrar"  />
+    <Input Label="Email*" placeholder="Digite seu email" bind:ChangeValue={email}/>
+    <Button title="Entrar"  on:click={handleClick}/>
   </div>
   
 </div>
