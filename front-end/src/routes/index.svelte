@@ -1,4 +1,5 @@
 <script>
+  import { onMount } from 'svelte'
   import { goto } from '@sapper/app'
   import axios from 'axios'
 
@@ -9,6 +10,12 @@
   //Variables
   let email = ''
   let error = false
+
+  onMount(async () => {
+    if (localStorage.getItem('logged')) {
+      goto('/listCompanies')
+    }
+  })
 
   function login() {
     const regex = /^[a-zA-Z0-9][a-zA-Z0-9\._-]+@([a-zA-Z0-9\._-]+\.)[a-zA-Z-0-9]{2}/
